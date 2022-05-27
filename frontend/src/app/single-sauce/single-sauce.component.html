@@ -1,6 +1,6 @@
 <mat-spinner *ngIf="loading"></mat-spinner>
 <div class="sauce-container" *ngIf="sauce$ | async as sauce">
-  <img [src]="sauce?.imageUrl" alt="">
+  <img [src]="sauce?.imageUrl" alt="" crossorigin>
   <div class="sauce-info">
     <h1 class="sauce-name">{{ sauce?.name }}</h1>
     <p class="manufacturer">by {{ sauce?.manufacturer }}</p>
